@@ -84,10 +84,7 @@ void PersonList::AddToList()
 			else
 				advance(CurrPtr);
 		}
-
-
 	}
-
 }
 
 void PersonList::insertAfter(PersonRec * node, PersonRec * CurrPtr)
