@@ -1,5 +1,5 @@
 #pragma once
-
+#include "stdafx.h"
 #include "personlist.h"
 #include <iostream>
 #include <string>
@@ -42,7 +42,7 @@ void PersonList::AddToList()
 
 	PersonRec * CurrPtr; //temp
 	PersonRec * node = new PersonRec;
-	strcpy(node->name, UserName);
+	strcpy_s(node->name, UserName);
 	node->bribe = UserBribe;
 	node->link = NULL;
 	CurrPtr = head; 
