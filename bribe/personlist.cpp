@@ -5,7 +5,8 @@
 #include <string>
 using namespace std;
 
-struct PersonRec {
+struct PersonRec 
+{
 	int bribe;
 	char name[20];
 	PersonRec * link;
@@ -46,8 +47,6 @@ void PersonList::AddToList()
 	node->bribe = UserBribe;
 	node->link = NULL;
 	CurrPtr = head; 
-
-
 
 	if (head == NULL) 
 	{
